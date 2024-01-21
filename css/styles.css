@@ -603,6 +603,17 @@ img {
     gap: 8px;
 }
 
+.form-label {
+    color: #8E8F99;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    /* 116.667% */
+    letter-spacing: 0.48px;
+}
+
 .modal-input {
     width: 360px;
     height: 40px;
@@ -614,4 +625,8 @@ img {
 
 .modal-input:active {
     border-color: #4D5AE5;
+}
+
+.form-input-icon {
+    
 }
