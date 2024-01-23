@@ -486,6 +486,10 @@
         max-width: 264px;
     }
     
+    .social-media-footer {
+        margin-right: 120px;
+    }
+    
     .sm-bottom-p {
         color: #FFF;
         font-family: Roboto;
@@ -530,8 +534,14 @@
         fill: #f4f4fd;
     }
     
-    .subscribe-section {
-        margin-left: 80px;
+    .footer-form {
+        display: flex;
+        gap: 24px;
+    }
+    
+    .footer-form-label {
+        display: inline-flex;
+        gap: 24px;
     }
     
     .subscribe-header {
@@ -552,50 +562,46 @@
     .subscribe-email {
         width: 246px;
         height: 40px;
+        border: 1px solid #ffffff;
         background-color: transparent;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
         border-radius: 4px;
-        border: 1px solid var(--WHITE, #FFF);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        padding-top: 8px;
-        padding-bottom: 8px;
         padding-left: 16px;
+        color: #ffffff;
     }
     
     .subscribe-email::placeholder {
-        color: var(--WHITE, #FFF);
-        font-family: Roboto;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        /* 200% */
-        letter-spacing: 0.48px;
+        color: #ffffff;
     }
     
     .subscribe-btn {
-        width: 165px;
+        min-width: 165px;
         height: 40px;
-        margin-left: 24px;
-        background: #4D5AE5;
-        padding: 8px 24px;
-        color: #FFF;
-        text-align: center;
-        /* Button Text */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: Roboto;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
-        line-height: 24px;
-        /* 150% */
-        letter-spacing: 0.64px;
-        border: 4px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        cursor: pointer;
+        background-color: #4D5AE5;
+        border: none;
+        border-radius: 4px;
     }
     
     .subscribe-icon {
-        position: absolute;
+        margin-left: 16px;
+        /*position: absolute;
         top: 148px;
         right: 183px;
         bottom: 140px;
+        left: 1223px;*/
     }
     
     .backdrop {
