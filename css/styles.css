@@ -723,7 +723,7 @@
         padding-left: 38px;
         flex-shrink: 0;
         border: 1px solid rgba(46, 47, 66, 0.4);
-        border-color: #8E8F99;
+        /*border-color: #8E8F99;*/
         border-radius: 4px;
         background-color: transparent;
         outline: transparent;
@@ -743,7 +743,6 @@
     }
     
     .form-input-icon {
-        fill: #2E2F42;
         position: absolute;
         left: 16px;
         top: 50%;
