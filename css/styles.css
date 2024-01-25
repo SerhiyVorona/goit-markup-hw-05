@@ -22,17 +22,23 @@
         margin: 0;
     }
     
-    h1 h2 h3 h4 h5 h6 {
-        margin: 0;
-    }
-    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
     p {
         margin: 0;
-        /*text-align: center;*/
+        text-align: center;
     }
     
     button {
         padding: 0;
+    }
+    
+    input:checked {
+        background-color: #404bbf;
     }
     
     img {
@@ -99,6 +105,15 @@
         color: #2E2F42;
         text-decoration: none;
         padding: 24px 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .nav-bar-item:focus {
+        color: #404bbf;
+    }
+    
+    .nav-bar-item:hover {
+        color: #404bbf;
     }
     
     .current-page {
@@ -160,7 +175,7 @@
         background-color: #2e2f42;
         max-width: 1440px;
         padding: 188px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office-1.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -240,10 +255,11 @@
         letter-spacing: 0.02em;
         color: #2e2f42;
         margin-bottom: 8px;
-        /*text-align: center;*/
+        text-align: left;
     }
     
     .about-us-point {
+        text-align: left;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -288,30 +304,21 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         text-align: center;
+        margin-bottom: 8px;
     }
     
     .team-member-details {
-        /* display: flex;
-    /*width: 232px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;*/
         padding: 32px 0;
-        /*display: flex;
-    width: 232px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    padding: 32px 16px;
-    /*padding: 32px 0;
-    display: flex;
-    width: 232px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;*/
+    }
+    
+    .list-title-team {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin-bottom: 8px;
+        text-align: center;
     }
     
     .social-media-icons {
@@ -397,9 +404,13 @@
         border-top: none;
     }
     
-    .list-title {
+    .list-title-cards {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
         margin-bottom: 8px;
-        text-align: center;
     }
     
     .portfolio-point {
@@ -813,6 +824,25 @@
         padding-left: 8px;
     }
     
+    .check-text-span {
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 2px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        fill: transparent;
+    }
+    
+    .check-terms:checked+.check-text span {
+        background-color: #404bbf;
+        border: none;
+        fill: #F4F4FD;
+    }
+    
     .check-icon {
         border: rgba(46, 47, 66, 0.40);
     }
@@ -830,12 +860,13 @@
     }
     
     .submit-form-btn {
-        width: 169px;
+        display: block;
+        min-width: 169px;
         height: 56px;
         /* Button Text */
         color: #FFF;
         text-align: center;
-        font-family: Roboto;
+        font-family: "Roboto", sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -849,10 +880,13 @@
         margin-right: auto;
         margin-top: 24px;
         margin-bottom: auto;
+        cursor: pointer;
+        border: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .is-open {
         opacity: 1;
-        visibility: visible;
+        visibility: hidden;
         pointer-events: auto;
     }
