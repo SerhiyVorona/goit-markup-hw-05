@@ -623,7 +623,7 @@
         left: 0;
         background-color: rgba(46, 47, 66, 0.40);
         opacity: 0;
-        visibility: hidden;
+        visibility: visible;
         pointer-events: none;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -664,11 +664,10 @@
         right: 24px;
         flex-shrink: 0;
     }
-    
-    .close-modal-btn:active {
+    /* .close-modal-btn:active {
         background-color: #404BBF;
         fill: #FFFFFF;
-    }
+    }*/
     
     .close-modal-btn:hover {
         background-color: #404bbf;
@@ -682,11 +681,19 @@
         border: none;
     }
     
-    .close-modal-btn-icon {
+    .close-modal-btn .close-modal-btn-icon {
         top: 24px;
         right: 24px;
         left: 360px;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .close-modal-btn:hover+svg {
+        fill: #ffffff;
+    }
+    
+    .close-modal-btn:focus+svg {
+        fill: #ffffff;
     }
     
     .modal-title {
