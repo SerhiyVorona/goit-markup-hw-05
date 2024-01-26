@@ -880,6 +880,6 @@
     
     .is-open {
         opacity: 1;
-        visibility: visible;
+        visibility: hidden;
         pointer-events: auto;
     }
