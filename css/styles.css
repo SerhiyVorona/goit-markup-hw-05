@@ -677,13 +677,13 @@
     .close-modal-btn:hover {
         background-color: #404bbf;
         border: none;
-        /*fill: #FFFFFF;*/
+        fill: #FFFFFF;
     }
     
     .close-modal-btn:focus {
         background-color: #404bbf;
         border: none;
-        /*fill: #ffffff;*/
+        fill: #ffffff;
     }
     
     .close-modal-btn:focus+.close-modal-btn-icon {
