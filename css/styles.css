@@ -677,12 +677,20 @@
     .close-modal-btn:hover {
         background-color: #404bbf;
         border: none;
-        fill: #FFFFFF;
+        /*fill: #FFFFFF;*/
     }
     
     .close-modal-btn:focus {
         background-color: #404bbf;
         border: none;
+        /*fill: #ffffff;*/
+    }
+    
+    .close-modal-btn:focus+.close-modal-btn-icon {
+        fill: #ffffff;
+    }
+    
+    .close-modal-btn:hover+.close-modal-btn-icon {
         fill: #ffffff;
     }
     
@@ -880,6 +888,6 @@
     
     .is-open {
         opacity: 1;
-        visibility: hidden;
+        visibility: visible;
         pointer-events: auto;
     }
